@@ -4,7 +4,7 @@ Script for inserting license notice into files
 ```
 linsert.py {license type} {project_name} {root_directory}
 ```
-{license_type} - one of available license types (value inside brackets).
+{license_type} - one of available license types (see below values inside brackets).
 
 {project_name} - project's name to be placed in the notice.
 
