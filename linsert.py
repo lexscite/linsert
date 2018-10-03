@@ -3,9 +3,9 @@ import os
 
 exclude_directories = ["dependencies", "packages"]
 
-available_licenses = ["gnu_2.0"]
+available_licenses = ["gnu_3.0"]
 
-gnu20_notice = "// This file is part of {project_name}.\n//\n// {project_name} is free software: you can redistribute it and/or modify\n// it under the terms of the GNU General Public License as published by\n// the Free Software Foundation, either version 3 of the License, or\n// (at your option) any later version.\n//\n// {project_name} is distributed in the hope that it will be useful,\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n// GNU General Public License for more details.\n//\n// You should have received a copy of the GNU General Public License\n// along with {project_name}.  If not, see <https://www.gnu.org/licenses/>."
+gnu30_notice = "// This file is part of {project_name}.\n//\n// {project_name} is free software: you can redistribute it and/or modify\n// it under the terms of the GNU General Public License as published by\n// the Free Software Foundation, either version 3 of the License, or\n// (at your option) any later version.\n//\n// {project_name} is distributed in the hope that it will be useful,\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n// GNU General Public License for more details.\n//\n// You should have received a copy of the GNU General Public License\n// along with {project_name}.  If not, see <https://www.gnu.org/licenses/>."
 
 def validate_args(args):
   if len(args) < 4:
@@ -26,8 +26,8 @@ def retrieve_filenames(path, exclude):
   return result
 
 def choose_license_notice(license):
-  if license == "gnu_2.0":
-    return gnu20_notice
+  if license == "gnu_3.0":
+    return gnu30_notice
 
 def main():
   if validate_args(sys.argv):

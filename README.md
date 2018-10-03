@@ -10,4 +10,4 @@ linsert.py {license type} {project_name} {root_directory}
 
 {root_directory} - path where files will be checked.
 ## Available license types
-- GNU 2.0 (gnu_2.0)
+- GNU 3.0 (gnu_3.0)
